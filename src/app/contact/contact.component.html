@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Booking</title>
+<meta charset="utf-8">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<style>
+
+
+</style>
+</head>
+<body>
+
+<div class="grid-container">
+
+
+<div class="row">
+  <div class="column side">
+   
+  </div>
+  <div class="column middle">
+    <h1 align="center">Contact Us</h1>
+    <h2 align="center">Got A Question? We would love to hear from you.Send us a message and we will respond soon.</h2>
+    <form >
+   
+    <input type="text"  name="name"  placeholder="Enter your full name here" #name>
+
+    
+    <input type="text"  name="emailAddress" placeholder="Enter your email here" #emailAddress>
+
+	 
+    <input type="text"  name="phoneNum" placeholder="Enter your phone number here" #phoneNum><br><br>
+	
+    <input type="text"  name="msg" placeholder="Enter your massage number here" style="height: 100px;" #msg><br><br>
+  
+  
+  <input type="datetime-local"  name="date"  #date  style="font-size: 1.8em"><br><br>
+	
+
+    <a routerLink="/thank-you-page"><button (click)="AddMsg(name.value,emailAddress.value,phoneNum.value,msg.value,date.value)">Submit</button></a>
+  </form>
+
+  
+  </div>
+  <div class="column side">
+    
+  </div>
+</div>
+  
+
+</div>
+</body>
+</html>

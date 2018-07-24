@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Page Title</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+
+
+
+</style>
+</head>
+<body>
+<div class="grid-container">
+
+    <div class="header">
+        <h1 align="center"> LaBooh Hotel</h1>
+        <h2 align="center">Have leisure time, Be at laBooh hotel</h2>
+      
+
+    </div>
+
+    <div >
+        <ul>
+            <li><a routerLink ="">HOME</a></li>
+            <li><a routerLink ="about">ABOUT</a></li>
+            <li><a routerLink ="bookings">BOOKINGS</a></li>
+            <li><a routerLink ="package">PACKAGES</a></li>
+            <li><a routerLink ="contact">CONTACT</a></li>
+  
+           
+        </ul>
+  
+    </div>
+
+    <div class="row">
+        <div >
+            <router-outlet>
+              
+            </router-outlet>
+          </div>
+    </div>
+
+    
+    <div class="footer">
+      <h2>Address</h2>
+      <table>
+          <tr>
+            <th><i class="fa fa-map-marker" style="font-size:20px;color:aliceblue"></i>: 173 Republic Road, Bordeaux, Randburg</th>
+          
+          </tr>
+          <tr>
+            <th><i class="fa fa-phone" style="font-size:20px;color:aliceblue"></i>: +27 11 450 9654</th>
+          
+          </tr>
+          <tr>
+            <th><i class="fa fa-envelope" style="font-size:20px;color:aliceblue"></i>: laboohotel@laboohza.co.za </th>
+           
+          </tr>
+        </table>
+    </div>
+  </div>
+
+</body>
+</html>
+
+
+
+
+

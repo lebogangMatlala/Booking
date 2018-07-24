@@ -1,0 +1,107 @@
+.body
+{
+
+  margin :0;
+  padding : 0;
+  color: aliceblue;
+  background-color:#2b3e50;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.grid-container {
+  display: grid;
+  grid-gap: 8px 8px;
+  grid-template-columns: auto ;
+    padding: 8px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.grid-item {
+  background-color: #375a7f;
+  padding-left: 200px;
+  text-align: left;
+  padding-right: 200px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+ 
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:#375a7f;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  
+}
+
+li {
+  float: left;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+li a {
+  display: block;
+  color: rgb(12, 11, 11);
+  text-align: center;
+  border-radius: 50%;
+  padding: 14px 16px;
+  text-decoration: none;
+  color: aliceblue;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+li a:hover {
+  background-color: rgb(92, 174, 180);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.header {
+    background-image:url('./assets/images/pool2.jpg');
+    padding: 10px;
+    text-align: center;
+    color: aliceblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.footer{
+    background-image:url('./assets/images/pool2.jpg');
+    padding: 10px;
+    text-align: left;
+    color: aliceblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+.column {
+    float: left;
+    padding: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Left and right column */
+.column.side {
+    width: 25%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Middle column */
+.column.middle {
+    width: 50%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column.side, .column.middle {
+        width: 100%;
+    }
+}

@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Booking</title>
+<meta charset="utf-8">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<style>
+
+</style>
+</head>
+<body>
+
+<div class="grid-container">
+
+<div class="row">
+  <div class="column side">
+   
+  </div>
+  <div class="column middle">
+      <h1>Booking Information</h1>
+      <input type="text" value={{fname}} >
+        <input type="text" value={{lname}} >
+        <input type="text" value={{email}} >
+        <input type="date" value={{checkin}}>
+        <input type="date" value={{checkout}}>
+        <input type="text" value={{adults}} >
+        <input type="text" value={{children}} >
+        <input type="text" value={{room}}>
+      
+      <a routerLink=""><button (click)="delete(fname)">Cancel Booking</button></a>
+     
+
+    
+  </div>
+
+  <div class="column side">
+
+    
+    
+  </div>
+</div>
+  
+
+</div>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Booking</title>
+<meta charset="utf-8">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<style>
+
+</style>
+</head>
+<body>
+
+<div class="grid-container">
+
+
+<div class="row">
+  <div class="column side">
+   
+  </div>
+  <div class="column middle">
+    <form >
+    <label for="fname">First Name</label>
+    <input type="text"  name="fname" placeholder="Enter your name" #fname>
+
+    <label for="lname">Last Name</label>
+    <input type="text"  name="lname" placeholder="Enter your surname" #lname>
+
+	 <label for="email"> Email </label>
+    <input type="text"  name="email" placeholder="Enter your email" #email><br><br>
+	
+  
+  
+  <label for="checkin" > Check In </label>
+  <input type="date"  name="checkin"  #checkin  style="font-size: 1.8em"><br><br>
+	
+	<label for="checkout"> Check out </label>
+    <input type="date"  name="checkout"  #checkout style="font-size: 1.8em"><br><br>
+    
+   
+	<label for="adults">Number of adults</label>
+    <select  type="Number" name="adults" #adults>
+     
+      <option >1</option>
+      <option >2</option>
+      <option >3</option>
+      <option >4</option>
+      
+      
+    </select>
+
+    <label for="children">Number of children</label>
+    <select  type="number" name="children" #children>
+     
+      <option >1</option>
+      <option >2</option>
+      <option >3</option>
+      <option >4</option>
+     
+      
+    </select>
+
+    <label for="room">Room Type</label>
+    <select  type="text" name="room" #room>
+         
+            <option > basic room</option>
+            <option >Studio room</option>
+            <option > Standard room</option>
+            <option > Triple Duluxe room</option>
+            <option > Quad Duluxe room</option>
+    </select>
+
+    <a routerLink="/success"><button (click)="AddUser(fname.value,lname.value,email.value,checkin.value,checkout.value,adults.value,children.value,room.value)">Submit</button></a>
+  </form>
+
+  
+  </div>
+  <div class="column side">
+    
+  </div>
+</div>
+  
+
+</div>
+</body>
+</html>
